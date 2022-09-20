@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	background: linear-gradient(120deg,#1DF7F9,#1DE6F9,#1DD8F9);
+	height:100vh;
+	overflow: hidden;
+}
+.center{
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%,-50%);
+	 width: 400px;
+	 background: #F4FAFA;
+	 border-radius: 10px;
+}
+.center h1{
+	color: #626567; 
+	text-align: center;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid silver;
+}
+.center form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+form .txt_field{
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+}
+.txt_field input{
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+}
+.showpassword input{
+	margin: -5px 0 20px 5px;
+	color: #626567;
+	font-family:Verdana; 
+	font-size: 16px;
+	cursor: pointer;
+}
+.showpassword label{
+	margin: -5px 0 20px 5px;
+	color: #626567;
+	font-family:Verdana; 
+	font-size: 16px;
+	cursor: pointer;
+}
+.showpassword label:hover{
+	text-decoration: none;
+}
+
+.submitbtn{
+	width: 100%;
+	height: 50px;
+	border: 1px solid;
+	background: #3FC9D3;
+	border-radius: 25px;
+	font-size: 15px;
+	color: #F4FAFA;
+	font-weight: 700;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.submitbtn:hover{
+	background: #3AB6BE;
+	border-color: #3AB6BE;
+	transition: .3s;
+}
