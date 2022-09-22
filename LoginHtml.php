@@ -1,4 +1,4 @@
- 
+ <!--  -->
  <!DOCTYPE html>
  <html>
  <head>
@@ -27,31 +27,34 @@
  				session_start();
  				$_SESSION['logged']="true";
  				$_SESSION['usrid']=$usrid;
- 				header("Location: http://www.youtube.com/");
+ 				header("Location:./AdminPanel.php");
  				exit();
  			}	
  			else{
- 				$msg="Invalid UserID or Password";
+ 				$msg="*Invalid UserID or Password";
  			}
  			 		}
  	}
  	?>
  </head>
  <body>
+        <nav>
+        <a href="home.php">About us</a>
+        <a href="contact.php">Contact us</a>
+        <a href="LoginHtml.php">Admin login</a>
+      <a href="TicketBook.php">Book a ticket</a>
+      <a href="Enquiry.php">Enquiry about your ticket</a>
+    </nav>
  		<div class="center">
  			<h1>Login</h1> 
- 			<form method="#">
+ 			<form method="POST" action="#">
  				<div class="txt_field">
  					<input type="text" placeholder="Enter UserID" name="userid" required>
  				</div>
  				<div class="txt_field">
  					<input type="password" placeholder="Enter Password" name="password" id="password" required>
  				</div>
- 				<div class="Errormsg">
- 					<?php
- 						echo ($msg);
- 					?>
- 				</div>
+ 				
  				<div class="showpassword" >
 
  					<input type="checkbox" onclick="toShowPassword()" >
@@ -69,6 +72,12 @@
  				</script>
  				</div>
  				<input type="submit" value="Login" class="submitbtn">
+                <div class="Errormsg">
+                    <?php
+                        echo ($msg);
+                        
+                    ?>
+                </div>
  			</form>
  </body>
  </html>

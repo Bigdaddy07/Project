@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("63846-humor-threadless.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+table{
+	box-shadow: 10px 10px 8px #000000;
+	border-radius: 10px;
+
+}
+table,th,td{
+	border-collapse: collapse;
+text-align: center;
+	vertical-align: center;
+	padding: 20px;
+	border: 2px solid white;
+
+}
+th{
+	background-color:  #3FC9D3;
+}
+tr:nth-child(even){
+	background-color: silver;
+}
+tr:nth-child(odd){
+	background-color: #FFFFFF;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	position: absolute;
+	top:5%;
+	left: 95%;
+	transform: translate(-50%,-50%);
+
+}
+.btninput{
+	height: 40px;
+	width: 60px;
+	position: relative;
+	text-align: center;
+	border-radius: 15px;
+	background-color: #3FC9D3;
+	border: 2px solid black;
+
+}
+.btninput:hover{
+	background: #3AB6BE;
+	border: 2px solid black;
+	transition: .3s;
+	transform: scale(1.1);
+}

@@ -1,9 +1,11 @@
 body{
 	margin: 0;
 	padding: 0;
+	background-image: url("airplanes-flying-over-world-map-vector.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: Verdana;
-	background: linear-gradient(120deg,#1DF7F9,#1DE6F9,#1DD8F9);
-	height:100vh;
+		height:100vh;
 	overflow: hidden;
 }
 .center{
@@ -12,8 +14,9 @@ body{
 	 left: 50%;
 	 transform: translate(-50%,-50%);
 	 width: 400px;
-	 background: #F4FAFA;
+	 background: white;
 	 border-radius: 10px;
+	 box-shadow: 10px 10px 8px #000000;
 }
 .center h1{
 	color: #626567; 
@@ -39,6 +42,7 @@ form .txt_field{
 	background: none;
 	outline: none;
 }
+
 .showpassword input{
 	margin: -5px 0 20px 5px;
 	color: #626567;
@@ -73,4 +77,28 @@ form .txt_field{
 	background: #3AB6BE;
 	border-color: #3AB6BE;
 	transition: .3s;
+}
+.Errormsg{
+	position: relative;
+	text-align: center;
+	color: red;
+	margin-bottom: 10px;
+}
+nav{
+    font-family: tahoma;
+    overflow: hidden;
+    background-color:#09f4f8;
+}
+nav a{
+    font-size: 18px;
+    float:right;
+    color:rgb(41, 41, 114);
+    padding:14px 12px 11px 10px;
+    text-decoration:none;
+    transition: transform 0.2s;
+}
+nav a:hover{
+    background-color:#0aa2c3 ;
+    color:#000000;
+    transform: scale(1.05);
 }
